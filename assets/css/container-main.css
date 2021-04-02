@@ -42,7 +42,7 @@
     font-size: 1.3rem;
     text-shadow: 0rem 0.1rem 0.2rem rgba(0,0,0,0.6);
     animation: focus-in-contract-bck 0.7s;
-    padding: 1rem 0rem 0rem 0rem;
+    padding: 1rem 0rem 0.8rem 0rem;
     font-weight: 400;
     font-family: var(--FontCormorant);
 }
