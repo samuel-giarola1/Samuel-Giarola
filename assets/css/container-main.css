@@ -1,0 +1,217 @@
+.container-main {
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+}
+
+.article-img {
+    position: relative;
+    padding: 2rem 0rem 2rem 0rem;
+}
+
+.img-eu {
+    max-width: 300px;
+    max-height: 300px;
+    border-radius: 50%;
+    box-shadow: 0rem 0.8rem 0.6rem 0rem rgba(0,0,0,0.4);
+    animation: anime-img 5s;
+}
+
+@keyframes anime-img {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.article-title {
+    padding: 0rem 0rem 1rem 0rem;
+}
+
+.title-h1 {
+    font-size: 2.5rem;
+    text-shadow: 0rem 0.1rem 0.2rem rgba(0,0,0,0.4);
+    animation: focus-in-contract-bck 0.7s;
+    font-weight: 700;
+    font-family: var(--FontNoto);
+}
+
+.title-p {
+    font-size: 1.3rem;
+    text-shadow: 0rem 0.1rem 0.2rem rgba(0,0,0,0.6);
+    animation: focus-in-contract-bck 0.7s;
+    padding: 1rem 0rem 0rem 0rem;
+    font-weight: 400;
+    font-family: var(--FontCormorant);
+}
+
+@-webkit-keyframes focus-in-contract-bck {
+    0% {
+      letter-spacing: 1em;
+      -webkit-transform: translateZ(300px);
+              transform: translateZ(300px);
+      -webkit-filter: blur(12px);
+              filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateZ(12px);
+              transform: translateZ(12px);
+      -webkit-filter: blur(0);
+              filter: blur(0);
+      opacity: 1;
+    }
+}
+@keyframes focus-in-contract-bck {
+    0% {
+      letter-spacing: 1em;
+      -webkit-transform: translateZ(300px);
+              transform: translateZ(300px);
+      -webkit-filter: blur(12px);
+              filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateZ(12px);
+              transform: translateZ(12px);
+      -webkit-filter: blur(0);
+              filter: blur(0);
+      opacity: 1;
+    }
+}
+
+.article-btn {
+    padding: 0rem 0rem 1rem 0rem;
+    display: flex;
+    justify-content: center;
+}
+
+.link {
+    padding: 0.5rem;
+}
+
+.btn {
+    background-color: #ffffff;
+    width: 150px;
+    height: 50px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    animation: anime-btn 2s;
+    box-shadow: 0rem 0.4rem 0.4rem 0rem rgba(0,0,0,0.4);
+    color: #000000;
+    line-height: 1;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+@keyframes anime-btn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    .link {
+        display: block;
+        padding: 0.5rem;
+    }
+    .article-btn {
+        padding: 0rem 0rem 1rem 0rem;
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 520px) {
+    .img-eu {
+        max-width: 280px;
+        max-height: 280px;;
+    }
+    .article-title {
+        padding: 0rem 4rem 0rem 4rem;
+    }
+    .article-btn {
+        padding: 0rem 0rem 1rem 0rem;
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 460px) {
+    .img-eu {
+        max-width: 280px;
+        max-height: 280px;;
+    }
+    .article-title {
+        padding: 0rem 3rem 0rem 3rem;
+    }
+    .article-btn {
+        padding: 0rem 0rem 1rem 0rem;
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 390px) {
+    .img-eu {
+        max-width: 270px;
+        max-height: 270px;;
+    }
+    .article-title {
+        padding: 0rem 2rem 0rem 2rem;
+    }
+    .article-btn {
+        padding: 0rem 0rem 1rem 0rem;
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .img-eu {
+        max-width: 230px;
+        max-height: 230px;;
+    }
+    .article-btn {
+        padding: 0rem 0rem 1rem 0rem;
+        display: block;
+    }
+}
+
+.article-copy {
+    padding: 0.8rem 0rem 1.8rem 0rem;
+}
+
+
+.copy-p {
+    font-size: 1rem;
+    animation: tracking-in-expand 0.7s;
+    text-shadow: 0rem 0.1rem 0.2rem rgba(0,0,0,0.9);
+}
+
+@-webkit-keyframes tracking-in-expand {
+    0% {
+      letter-spacing: -0.5em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      opacity: 1;
+    }
+}
+@keyframes tracking-in-expand {
+    0% {
+      letter-spacing: -0.5em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      opacity: 1;
+    }
+}
